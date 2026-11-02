@@ -1,0 +1,218 @@
+/* ===== Base Reset & Typography ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background-color: #f7f7f5;
+    font-size: 17px;
+}
+
+/* ===== Layout ===== */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #1c2526;
+    color: #ffffff;
+    padding: 60px 0 50px;
+    text-align: center;
+    border-bottom: 4px solid #2c3e50;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    color: #c5c9ca;
+    font-weight: 400;
+}
+
+/* ===== Main Content ===== */
+main {
+    padding: 50px 0 80px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    margin-bottom: 28px;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* ===== Destination Sections ===== */
+.destination {
+    margin-bottom: 70px;
+}
+
+.destination h2 {
+    font-size: 1.75rem;
+    color: #1c2526;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dfe3e4;
+}
+
+.destination > p {
+    margin-bottom: 16px;
+    color: #333;
+}
+
+/* ===== Place Cards ===== */
+.places {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 30px;
+}
+
+.place {
+    display: flex;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.place:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.11);
+}
+
+.place img {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.place-content {
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.place h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.place h3 a {
+    color: #1c2526;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.place h3 a:hover {
+    border-bottom-color: #1c2526;
+}
+
+.place p {
+    color: #444;
+    font-size: 0.98rem;
+}
+
+/* Single image (Balkans) */
+.single-image {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 28px auto 0;
+}
+
+/* ===== Closing ===== */
+.closing {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.closing p {
+    max-width: 640px;
+    margin: 0 auto 12px;
+    font-size: 1.1rem;
+}
+
+.signature {
+    font-style: italic;
+    color: #555;
+    margin-top: 20px !important;
+}
+
+/* ===== Links ===== */
+a {
+    color: #1a5276;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1c2526;
+    color: #a0a7a8;
+    text-align: center;
+    padding: 24px 0;
+    font-size: 0.95rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+    header {
+        padding: 40px 0 35px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .place {
+        flex-direction: column;
+    }
+
+    .place img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .place-content {
+        padding: 18px 20px;
+    }
+}
